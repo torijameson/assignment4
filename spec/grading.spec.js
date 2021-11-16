@@ -25,6 +25,8 @@ describe ("Grading Tests: ", function () {
       let stylesElement = window.document.createElement("style");
       stylesElement.textContent = css;
       window.document.head.appendChild(stylesElement);
+      
+      container = window.document;
 
       window.addEventListener("load", function() {
          container = window.document;
